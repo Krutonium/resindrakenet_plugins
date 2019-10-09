@@ -1,0 +1,4 @@
+name: ItemRestrictor
+version: "1"
+author: Krutonium
+main: ga.krutonium.itemrestrictor.itemrestrictor

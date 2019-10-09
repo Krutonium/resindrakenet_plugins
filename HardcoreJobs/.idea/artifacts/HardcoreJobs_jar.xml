@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HardcoreJobs:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HardcoreJobs_jar</output-path>
+    <root id="archive" name="HardcoreJobs.jar">
+      <element id="module-output" name="HardcoreJobs" />
+    </root>
+  </artifact>
+</component>

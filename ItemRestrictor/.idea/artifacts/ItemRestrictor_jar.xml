@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ItemRestrictor:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ItemRestrictor_jar</output-path>
+    <root id="archive" name="ItemRestrictor.jar">
+      <element id="module-output" name="ItemRestrictor" />
+    </root>
+  </artifact>
+</component>

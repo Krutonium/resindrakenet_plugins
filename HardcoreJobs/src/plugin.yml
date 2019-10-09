@@ -1,0 +1,5 @@
+name: HardCoreJobs
+version: 1.0
+author: Krutonium
+main: ga.krutonium.hardcorejobs.Main
+api-version: 1.14
