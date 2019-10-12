@@ -6,7 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88bb093e-f772-41c9-9efe-9f751b7a4667" name="Default Changelist" comment="" />
+    <list default="true" id="88bb093e-f772-41c9-9efe-9f751b7a4667" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HardcoreJobs/ga/krutonium/hardcorejobs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HardcoreJobs/ga/krutonium/hardcorejobs/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HardcoreJobs/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HardcoreJobs/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ga/krutonium/hardcorejobs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ga/krutonium/hardcorejobs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +26,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1RwnEH0FNaCBmBBm74UNhr4vS6p" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SQLiteLib.jar!/" />
@@ -51,11 +64,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570586912479</updated>
-      <workItem from="1570586917045" duration="2153000" />
+      <workItem from="1570586917045" duration="2988000" />
+      <workItem from="1570783107936" duration="3274000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
