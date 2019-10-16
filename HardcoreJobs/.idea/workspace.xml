@@ -8,10 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="88bb093e-f772-41c9-9efe-9f751b7a4667" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HardcoreJobs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HardcoreJobs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HardcoreJobs/ga/krutonium/hardcorejobs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HardcoreJobs/ga/krutonium/hardcorejobs/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HardcoreJobs/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HardcoreJobs/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ga/krutonium/hardcorejobs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ga/krutonium/hardcorejobs/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Krutonium &lt;pfckrutonium@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1RwnEH0FNaCBmBBm74UNhr4vS6p" />
@@ -37,7 +41,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SQLiteLib.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Spigot/spigot-api-1.14.4-R0.1-20191006.073754-70.jar!/" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -66,6 +70,10 @@
       <updated>1570586912479</updated>
       <workItem from="1570586917045" duration="2988000" />
       <workItem from="1570783107936" duration="3274000" />
+      <workItem from="1570860967698" duration="3740000" />
+      <workItem from="1571210301059" duration="2290000" />
+      <workItem from="1571212828152" duration="1285000" />
+      <workItem from="1571214588279" duration="3296000" />
     </task>
     <servers />
   </component>
@@ -77,7 +85,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

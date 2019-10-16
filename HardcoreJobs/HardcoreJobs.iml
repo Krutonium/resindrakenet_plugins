@@ -10,27 +10,18 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/spigot-api-1.14.4-R0.1-20190918.100954-65.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/Spigot/Server/spigot-1.14.4.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Spigot/spigot-1.14.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/Downloads/Spigot/Server/spigot-1.14.4.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Spigot/spigot-1.14.4.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/SQLiteLib.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/Spigot/spigot-api-1.14.4-R0.1-20191006.073754-70.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
