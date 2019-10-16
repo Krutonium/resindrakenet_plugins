@@ -1,0 +1,394 @@
+_default: #Default behaviour for all jobs
+    base: NONE #What this job inherits
+    type: NONE #The type of work, e.g. hobo, basejob, specialisation
+    recipes: #Default access to recipes
+        _default: #The default behaviour for all recipes in the game
+            #if any parameter is unspecified, crash
+            craftable: no #Whether the recipe should be craftable or not
+            exp: 0 #The EXP earned for crafting the recipe
+            money: 0 #The money earned for crafting the recipe
+        _survivalblocks:
+            inherit: _default
+            craftable: yes
+        CRAFTING_TABLE:
+            inherit: _survivalblocks
+        WOODEN_PICKAXE:
+            inherit: _survivalblocks
+        WOODEN_AXE:
+            inherit: _survivalblocks
+        WOODEN_SHOVEL:
+            inherit: _survivalblocks
+        WOODEN_HOE:
+            inherit: _survivalblocks
+        WOODEN_SWORD:
+            inherit: _survivalblocks
+        TORCH:
+            inherit: _survivalblocks
+        CHEST:
+            inherit: _survivalblocks
+        WOOD_SIGN:
+            inherit: _survivalblocks
+    wield:
+        _default: #The default
+            wieldable: yes #Whether the item can be held and used
+            #How breakable the item is. <1 means it is more durable, >1 means it is more breakable
+            maxbreakability: 1 #The most breakable the item will be, at Lv1
+            minbreakability: 1 #The least breakable the item will be, at Lv50
+
+        _lowtier_tools:
+            wieldable: yes #Whether the item can be held and used
+            level: 0 #Job level required to wield item
+            #How breakable the item is. <1 means it is more durable, >1 means it is more breakable
+            maxbreakability: 1.2 #Lv1
+            minbreakability: 1.2 #Lv50
+        WOOD_PICKAXE:
+            inherit: _lowtier_tools
+        WOOD_AXE:
+            inherit: _lowtier_tools
+        WOOD_SHOVEL:
+            inherit: _lowtier_tools
+        WOOD_HOE:
+            inherit: _lowtier_tools
+        WOOD_SWORD:
+            inherit: _lowtier_tools
+        STONE_PICKAXE:
+            inherit: _lowtier_tools
+        STONE_AXE:
+            inherit: _lowtier_tools
+        STONE_SHOVEL:
+            inherit: _lowtier_tools
+        STONE_HOE:
+            inherit: _lowtier_tools
+        STONE_SWORD:
+            inherit: _lowtier_tools
+        IRON_PICKAXE:
+            inherit: _lowtier_tools
+        IRON_AXE:
+            inherit: _lowtier_tools
+        IRON_SHOVEL:
+            inherit: _lowtier_tools
+        IRON_HOE:
+            inherit: _lowtier_tools
+        IRON_SWORD:
+            inherit: _lowtier_tools
+
+        _gold_tools:
+            inherit: _lowtier_tools
+            wieldable: no #Whether the item can be held and used
+            level: 25 #Job level required to wield item
+            maxbreakability: 1.2 #Lv1
+            minbreakability: 0.8 #Lv50
+        GOLD_PICKAXE:
+            inherit: _gold_tools
+        GOLD_AXE:
+            inherit: _gold_tools
+        GOLD_SHOVEL:
+            inherit: _gold_tools
+        GOLD_HOE:
+            inherit: _gold_tools
+        GOLD_SWORD:
+            inherit: _gold_tools
+
+        _diamond_tools:
+            inherit: _gold_tools
+            level: 55 #Job level required to wield item
+        DIAMOND_PICKAXE:
+            inherit: _diamond_tools
+        DIAMOND_AXE:
+            inherit: _diamond_tools
+        DIAMOND_SHOVEL:
+            inherit: _diamond_tools
+        DIAMOND_HOE:
+            inherit: _diamond_tools
+        DIAMOND_SWORD:
+            inherit: _diamond_tools
+    anywhere:
+        _default:
+            place: #Default behaviour for attempting to place anything in a plot
+                #if any parameter is unspecified, crash
+                placeable: yes #Whether the block should be placeable
+                decay: 0 #The time, in hrs, before the block decays
+                above: 0 #The minimum Y level the block can be placed at
+                below: 256 #The minimum Y level the block can be placed at
+                exp: 0 #The EXP earned for placing the block
+                money: 0 #The money earned for placing the block
+            destroy: #Default behaviour for attempting to break anything in a plot
+                #if any parameter is unspecified, crash
+                breakable: yes #Whether the block should be placeable
+                above: 0 #The minimum Y level the block can be broken at
+                below: 256 #The minimum Y level the block can be broken at
+                minyield: 1 #The minimum yield the block will drop, at job Lv1
+                maxyield: 1 #The minimum yield the block will drop, at job Lv50
+                exp: 0 #The EXP earned for breaking the block
+                money: 0 #The money earned for breaking the block
+                belowYieldMsg: "Warning: You are not skilled enough to mine this block properly"
+    plot: #Build/destroy behaviour in a plot. Inherits from 'anywhere'.
+        _default:
+            place:
+                placeable: yes
+            destroy:
+                breakable: yes
+    wild: #Build/destroy behaviour in the wild. Inherits from 'anywhere'.
+        _default:
+            place:
+                placeable: no
+            destroy:
+                breakable: no
+        _survivalblocks:
+            place:
+                inherit: _default
+                breakable: yes
+                decay: 24
+            destroy:
+                inherit: _default
+                breakable: yes
+                yield: 1
+                SCAFFOLDING:
+                    inherit: _survivalblocks
+        CRAFTING_TABLE:
+            inherit: _survivalblocks
+        TORCH:
+            inherit: _survivalblocks
+        CHEST:
+            inherit: _survivalblocks
+        BARREL:
+            inherit: _survivalblocks
+        SCAFFOLDING:
+            inherit: _survivalblocks
+        CRAFTING_TABLE:
+            inherit: _survivalblocks
+        TORCH:
+            inherit: _survivalblocks
+        CHEST:
+            inherit: _survivalblocks
+        BARREL:
+            inherit: _survivalblocks
+
+
+
+
+
+
+unemployed: #Pros/cons for being completely unemployed to be specified here
+    base: _default
+    type: hobo
+
+
+
+
+
+peasant: #Base job for agriculture
+    base: _default
+    type: basejob
+
+forester: #Specialised
+    base: peasant
+    type: specialisation
+
+farmer: #Specialised
+    base: peasant
+    type: specialisation
+
+rancher: #Specialised
+    base: peasant
+    type: specialisation
+
+
+
+
+
+pioneer: #Base job for mining
+    base: _default
+    type: basejob
+    recipes:
+        _minertools:
+            craftable: yes
+
+        STONE_PICKAXE:
+            inherit: _minertools
+        STONE_SHOVEL:
+            inherit: _minertools
+    wield:
+        WOOD_PICKAXE:
+            wieldable: yes
+            minbreakability: 0.8
+        WOOD_SHOVEL:
+            wieldable: yes
+            minbreakability: 0.8
+
+        STONE_PICKAXE:
+            wieldable: yes
+            minbreakability: 0.8
+        STONE_SHOVEL:
+            wieldable: yes
+            minbreakability: 0.8
+
+        IRON_PICKAXE:
+            wieldable: yes
+            minbreakability: 0.8
+        IRON_SHOVEL:
+            wieldable: yes
+            minbreakability: 0.8
+
+        GOLD_PICKAXE:
+            wieldable: yes
+        GOLD_SHOVEL:
+            wieldable: yes
+
+        DIAMOND_PICKAXE:
+            wieldable: yes
+        DIAMOND_SHOVEL:
+            wieldable: yes
+    anywhere:
+        _default:
+            destroy:
+                breakable: yes
+                above: 20
+                below: 48
+                minyield: 0
+                maxyield: 0
+                exp: 0
+                money: 0
+
+        _quarryblocks:
+            #inherit: _default
+            destroy:
+                breakable: yes
+                minyield: 0
+                maxyield: 0.3
+                exp: 1
+                money: 0.001
+        STONE:
+            inherit: _quarryblocks
+            destroy:
+                minyield: 0.1
+                maxyield: 0.2
+        ANDESITE:
+            inherit: _quarryblocks
+        DIORITE:
+            inherit: _quarryblocks
+        GRANITE:
+            inherit: _quarryblocks
+
+        _lowtier_ores:
+            inherit: _quarryblocks
+            destroy:
+                above: 0
+                below: 256
+                minyield: 0.5
+                maxyield: 1
+                exp: 10
+                money: 0.01
+        COAL_ORE:
+            inherit: _lowtier_ores
+        IRON_ORE:
+            inherit: _lowtier_ores
+
+        _hightier_ores:
+            inherit: _lowtier_ores
+            destroy:
+                minyield: 0
+                maxyield: 0.5
+        GOLD_ORE:
+            inherit: _hightier_ores
+        LAPIS_ORE:
+            inherit: _hightier_ores
+        REDSTONE_ORE:
+            inherit: _hightier_ores
+        DIAMOND_ORE:
+            inherit: _hightier_ores
+        EMERALD_ORE:
+            inherit: _hightier_ores
+
+
+
+miner: #Specialised pioneer who mines higher tier ores; can mine deeper too
+    base: pioneer
+    type: specialisation
+    anywhere:
+        _ores:
+            destroy:
+                minyield: 1
+                maxyield: 2
+                exp: 15
+                money: 0.02
+
+        _lowtier_ores:
+            destroy:
+                minyield: 0.5
+                maxyield: 1
+                exp: 15
+                money: 0.02
+
+        _hightier_ores:
+            destroy:
+                minyield: 1
+                maxyield: 3
+                exp: 30
+                money: 0.03
+        DIAMOND_ORE:
+            money: 0.05
+
+quarrier: #Specialised pioneer who gets higher yield from quarried stone
+    base: pioneer
+    type: specialisation
+    anywhere:
+        _quarryblocks:
+            destroy:
+                breakable: yes
+                minyield: 1
+                maxyield: 1
+                exp: 2
+                money: 0.002
+        STONE:
+            destroy:
+                minyield: 0.2
+                maxyield: 0.4
+
+builder: #Specialised pioneer who can build in the wild
+    base: pioneer
+    type: specialisation
+
+
+
+
+
+shaper: #Base job for crafting
+    base: _default
+    type: basejob
+
+artisan: #Specialised shaper who rafts specialty building blocks/items/entities
+    base: shaper
+    type: specialisation
+
+toolsmith: #Specialised shaper who crafts gold/diamond tools.
+    base: shaper
+    type: specialisation
+
+weaponsmith: #Specialised shaper who crafts gold/diamond weapons (inc. axe), crossbows and shields, and iron/gold/diamond armor.
+    base: shaper
+    type: specialisation
+
+occultist: #Specialised shaper who crafts potions, performs enchantments and can do repairs.
+    base: shaper
+    type: specialisation
+
+
+
+
+
+mercenary: #Base job for combat
+    base: _default
+    type: basejob
+
+warrior: #Specialised mercenary
+    base: mercenary
+    type: specialisation
+
+ranger: #Specialised mercenary
+    base: mercenary
+    type: specialisation
+
+sentinel: #Specialised mercenary
+    base: mercenary
+    type: specialisation
